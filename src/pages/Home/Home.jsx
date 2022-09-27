@@ -1,5 +1,5 @@
 import "./Home.css";
-import Card from "../../component/Card/Card";
+import Card from "../../components/Card/Card";
 import Banner from "../../assets/banner.png";
 import accomodation from "../../data/logements.json";
 
