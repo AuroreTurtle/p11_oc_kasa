@@ -1,13 +1,15 @@
 import "./Home.css";
-import Card from "../../components/Card/Card";
-import Banner from "../../assets/banner.png";
 import accomodation from "../../data/logements.json";
+import Card from "../../components/Card/Card";
+import BannerDesktop from "../../assets/banner-desktop.png";
+import BannerMobile from "../../assets/banner-mobile.png";
 
 function Home() {
     return (
         <main>
             <div id="title">
-                <img src={Banner} alt="Bannière avec un paysage" />
+                <img id="title-banner-desktop" src={BannerDesktop} alt="Bannière avec un paysage" />
+                <img id="title-banner-mobile" src={BannerMobile} alt="Bannière avec un paysage" />
                 <div id="title-bg"></div>
                 <h1>Chez vous, partout et ailleurs</h1>
             </div>
