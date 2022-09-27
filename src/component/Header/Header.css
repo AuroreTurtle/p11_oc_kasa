@@ -1,0 +1,44 @@
+/* Mobile */
+header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+#header-logo {
+    width: 145px;
+    height: 47px;
+}
+
+nav {
+        display: flex;
+        justify-content: space-between;
+        width: 115px;
+        height: 17px;
+}
+
+.nav-link{
+        font-size: 12px;
+        font-weight: 500;
+        color: #FF6060;
+        text-decoration: none;
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1280px)
+    {
+    #header-logo {
+        width: 210px;
+        height: 68px;
+    }
+
+    nav {
+        width: 250px;
+        height: 34px;
+    }
+
+    .nav-link{
+        font-size: 24px;
+    }
+}
