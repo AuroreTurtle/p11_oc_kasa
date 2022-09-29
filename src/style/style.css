@@ -6,11 +6,13 @@ body{
     margin: 0;
 }
 
+/* Mobile */
 header, main {
-        margin: 20px;
-    }
+    margin: 20px;
+}
 
 
+/* Desktop */
 @media screen and (min-width: 1280px)
 {    
     header, main {
