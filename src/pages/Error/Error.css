@@ -1,3 +1,4 @@
+/* Mobile */
 #error{
     display: flex;
     flex-direction: column;
@@ -15,19 +16,18 @@
 #error-text{
     text-align: center;
     font-size: 18px;
-    font-weight: 500;
     width: 260px;
     margin: 0;
 }
 
 #error-link{
     font-size: 14px;
-    font-weight: 500;
     color: #FF6060;
     margin-top: 40%;
     margin-bottom: 20%;
 }
 
+/* Tablet */
 @media screen and (min-width: 768px) 
 {
     #error{
@@ -45,6 +45,7 @@
     }
 }
 
+/* Desktop */
 @media screen and (min-width: 1280px) 
 {
     #error span {

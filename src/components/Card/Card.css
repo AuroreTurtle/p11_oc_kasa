@@ -3,7 +3,7 @@
 .accomodation-card{
     width: 335px;
     height: 255px;
-    margin-top: 10%;
+    margin-top: 6%;
 }
 
 .accomodation-card img {
@@ -14,7 +14,6 @@
 }
 
 .accomodation-card h2{
-    font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
     /* color: black;

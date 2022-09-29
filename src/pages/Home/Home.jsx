@@ -8,12 +8,15 @@ import BannerMobile from "../../assets/banner-mobile.png";
 function Home() {
     return (
         <main>
+            {/* Banner */}
             <div id="title">
                 <img id="title-banner-desktop" src={BannerDesktop} alt="Bannière avec un paysage" />
                 <img id="title-banner-mobile" src={BannerMobile} alt="Bannière avec un paysage" />
                 <div id="title-bg"></div>
                 <h1 id="title-home">Chez vous, partout et ailleurs</h1>
             </div>
+
+            {/* List of accomodation */}
             <div id="accomodation">
                 {accomodation.map((card) => (
                     <Link className="accomodation-link" key={`${card.id}`} to={`/accomodation/${card.id}`}>

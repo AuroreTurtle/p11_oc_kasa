@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
-import Logo from "../../assets/logo.PNG";
+import Logo from "../../assets/logo.png";
 
 function Header() {
     const pathname = useLocation().pathname;

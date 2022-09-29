@@ -7,7 +7,6 @@
 }
 
 #intro-title{
-    font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
     margin-top: 2%;
@@ -16,14 +15,12 @@
 }
 
 #intro-location{
-    font-weight: 500;
     font-size: 14px;
     margin-top: 2%;
     margin-bottom: 5%;
 }
 
 .tag{
-    font-weight: 500;
     font-size: 10px;
     color: #FFFFFF;
     background-color: #FF6060;
@@ -61,7 +58,7 @@
 #host-info{
     display: flex;
     align-items: center;
-    width: 35%;
+    width: 30%;
 }
 
 #host-info-picture{
@@ -71,7 +68,6 @@
 }
 
 #host-info-name{
-    font-weight: 500;
     font-size: 12px;
     margin: 0 10% 0 0;
     text-align: right;
@@ -150,7 +146,7 @@
     }
 
     #host-info{
-        margin-top: 10%;
+        margin-top: 15%;
         width: 100%;
     }
 
@@ -175,6 +171,7 @@
 
     .accomodation-info-details {
         width: 45%;
+        margin-bottom: 0;
     }
 
     .accomodation-info-title, .accomodation-info-text {

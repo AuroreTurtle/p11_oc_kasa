@@ -10,15 +10,14 @@ footer{
 #footer-logo{
     width: 122px;
     height: 40px;
-    margin-top: 66px;
+    margin-top: 50%;
     filter: brightness(300%)
 }
 
 footer p {
-    font-weight: 500;
     font-size: 12px;
     color: #FFFFFF;
-    margin-top: 29px;
+    margin-top: 6%;
     margin-bottom: 0;
 }
 
@@ -28,5 +27,6 @@ footer p {
 {
     footer p {
         font-size: 24px;
+        margin-top: 3%;
     }
 }
