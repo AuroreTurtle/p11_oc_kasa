@@ -3,13 +3,14 @@
 /* Mobile */
 /* Introduction of accomodation */
 #intro{
-    color: #FF6060
+    color: #FF6060;
+    margin-top: 2%;
 }
 
 #intro-title{
     font-size: 18px;
     line-height: 142.6%;
-    margin-top: 2%;
+    margin-top: 0;
     margin-bottom: 0;
     width: 90%;
 }
@@ -17,16 +18,25 @@
 #intro-location{
     font-size: 14px;
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
+
+#tags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
 
 .tag{
     font-size: 10px;
+    text-align: center;
     color: #FFFFFF;
     background-color: #FF6060;
     border-radius: 5px;
-    padding: 2% 4% 2% 4%;
-    margin-right: 3%;
+    padding: 2%;
 }
 
 /* Host of accomodation with stars*/
@@ -34,25 +44,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 7%;
-    margin-bottom: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 #host-stars{
     width: 30%;
 }
 
-.fa-star{
-    font-size: 15px;
+.star{
+    width: 15px;
+    height:15px;
     margin-right: 2%;
 }
 
 .star-red{
-    color: #FF6060;
+    fill: #FF6060;
 }
 
 .star-grey{
-    color: #E3E3E3;
+    fill: #E3E3E3;
 }
 
 #host-info{
@@ -87,32 +98,25 @@
         width: 100%;
     }
 
-    #intro-location{
-        margin-bottom: 2%;
+    #tags {
+        width: 110%;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .tag{
         border-radius: 10px;
-        padding: 1% 2% 1% 2%;
-        margin-right: 2%;
+        padding: 5px;
     }
 
     /* Host of accomodation with stars*/
     #host{
-        display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
         align-items: flex-end;
         width: 15%;
         margin: 0;
     }
 
-    #host-stars{
-        width: 100%;
-    }
-
-    #host-info{
-        margin-top: 10%;
+    #host-stars, #host-info{
         width: 100%;
     }
 }
@@ -128,30 +132,25 @@
     #intro-location{
         font-size: 18px;
         margin-top: 1%;
-        margin-bottom: 3%;
+        margin-bottom: 5%;
+    }
+
+    #tags {
+        width: 100%;
     }
 
     .tag{
         font-size: 14px;
-        border-radius: 10px;
     }
 
     /* Host of accomodation with stars*/
     #host{
-        width: 13%;
+        width: 14%;
     }
 
-    #host-stars{
-        width: 100%;
-    }
-
-    #host-info{
-        margin-top: 15%;
-        width: 100%;
-    }
-
-    .fa-star{
-        font-size: 25px;
+    .star{
+        width: 30px;
+        height: 30px;;
     }
 
     #host-info-picture{
@@ -178,8 +177,14 @@
         font-size: 18px;
     }
 
+    .accomodation-info-title {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
     .accomodation-info-text {
         padding-top: 6%;
+        padding-bottom: 5%;
     }
 
 }

@@ -26,13 +26,16 @@ summary {
 }
 
 details p, details ul {
-    font-weight: 400;
-    font-size: 12px;
-    color: #FF6060;
     background-color: #F7F7F7;
     border-radius: 5px;
     margin-top: 0;
     padding: 6% 2% 6% 3%;
+}
+
+details p, details li{
+    font-weight: 400;
+    font-size: 12px;
+    color: #FF6060;
 }
 
 details ul {
@@ -48,5 +51,13 @@ details ul {
 
     details p, details ul {
         padding: 3% 2% 2% 2%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px)
+{
+    details li{
+        font-size: 18px;
     }
 }
