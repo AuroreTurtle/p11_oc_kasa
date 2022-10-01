@@ -21,6 +21,7 @@
     margin-bottom: 3%;
 }
 
+/* Tag */
 #tags {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -28,7 +29,6 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
-
 
 .tag{
     font-size: 10px;
@@ -52,6 +52,7 @@
     width: 30%;
 }
 
+/* Stars */
 .star{
     width: 15px;
     height:15px;
@@ -66,6 +67,7 @@
     fill: #E3E3E3;
 }
 
+/* Host */
 #host-info{
     display: flex;
     align-items: center;
@@ -132,9 +134,9 @@
     #intro-location{
         font-size: 18px;
         margin-top: 1%;
-        margin-bottom: 5%;
     }
 
+    /* Tag */
     #tags {
         width: 100%;
     }
