@@ -1,6 +1,7 @@
 import accomodation from "../../data/logements.json";
 import { useParams } from "react-router-dom";
 import Slider from "../../components/Slider/Slider.jsx";
+import Collapse from "../../components/Collapse/Collapse";
 import "./Accomodation.css";
 
 function Accomodation() {
@@ -71,23 +72,20 @@ function Accomodation() {
 
             {/* Collapse */}
             <div id="accomodation-info">
-                <details className="accomodation-info-details">
-                    <summary className="accomodation-info-title">
-                        Description <i className="fa-solid fa-chevron-down"></i>
-                    </summary>
-                    <p className="accomodation-info-text">{description}</p>
-                </details>
-
-                <details className="accomodation-info-details">
-                    <summary className="accomodation-info-title">
-                        Equipements <i className="fa-solid fa-chevron-down"></i>
-                    </summary>
-                    <ul className="accomodation-info-text">
-                        {equipments.map((equipment) => {
-                            return <li key={`${equipment}`}> {equipment}</li>;
-                        })}
-                    </ul>
-                </details>
+                <Collapse
+                    title=" Description"
+                    content={description}
+                    details="accomodation-info-details"
+                    summary="accomodation-info-title"
+                    text="accomodation-info-text"
+                />
+                <Collapse
+                    title=" Équipements"
+                    content={equipments}
+                    details="accomodation-info-details"
+                    summary="accomodation-info-title"
+                    text="accomodation-info-text"
+                />
             </div>
         </main>
     );

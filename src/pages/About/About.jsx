@@ -1,3 +1,4 @@
+import Collapse from "../../components/Collapse/Collapse";
 import "./About.css";
 import BannerAboutDesktop from "../../assets/banner-about-desktop.png";
 import BannerAboutMobile from "../../assets/banner-about-mobile.png";
@@ -11,48 +12,44 @@ function About() {
                 <div id="banner-bg"></div>
             </div>
             <div id="about-collapse">
-                <details className="about-details">
-                    <summary className="about-title">
-                        Fiabilité <i className="fa-solid fa-chevron-down"></i>
-                    </summary>
-                    <p className="about-text">
-                        Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux
-                        logements, et toutes les informations sont régulièrement vérifiées par nos équipes.
-                    </p>
-                </details>
+                <Collapse
+                    title="Fiabilité"
+                    content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux
+                        logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
+                    details="about-details"
+                    summary="about-title"
+                    text="about-text"
+                />
 
-                <details className="about-details">
-                    <summary className="about-title">
-                        Respect <i className="fa-solid fa-chevron-down"></i>
-                    </summary>
-                    <p className="about-text">
-                        La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire
-                        ou de perturbation du voisinage entraînera une exclusion de notre plateforme.
-                    </p>
-                </details>
+                <Collapse
+                    title="Respect"
+                    content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire
+                        ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+                    details="about-details"
+                    summary="about-title"
+                    text="about-text"
+                />
 
-                <details className="about-details">
-                    <summary className="about-title">
-                        Service <i className="fa-solid fa-chevron-down"></i>
-                    </summary>
-                    <p className="about-text">
-                        Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez
-                        pas à nous contacter si vous avez la moindre question.
-                    </p>
-                </details>
+                <Collapse
+                    title="Service"
+                    content="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez
+                        pas à nous contacter si vous avez la moindre question."
+                    details="about-details"
+                    summary="about-title"
+                    text="about-text"
+                />
 
-                <details className="about-details">
-                    <summary className="about-title">
-                        Sécurité <i className="fa-solid fa-chevron-down"></i>
-                    </summary>
-                    <p className="about-text">
-                        La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque
+                <Collapse
+                    title="Sécurité"
+                    content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque
                         logement correspond aux critères de sécurité établis par nos services. En laissant une note
                         aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards
                         sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos
-                        hôtes.
-                    </p>
-                </details>
+                        hôtes."
+                    details="about-details"
+                    summary="about-title"
+                    text="about-text"
+                />
             </div>
         </main>
     );
