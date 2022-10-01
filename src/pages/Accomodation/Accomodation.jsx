@@ -1,6 +1,7 @@
 import accomodation from "../../data/logements.json";
 import { useParams } from "react-router-dom";
 import Slider from "../../components/Slider/Slider.jsx";
+import Tag from "../../components/Tag/Tag";
 import Collapse from "../../components/Collapse/Collapse";
 import "./Accomodation.css";
 
@@ -20,15 +21,7 @@ function Accomodation() {
                 <div>
                     <h1 id="intro-title">{title}</h1>
                     <h2 id="intro-location">{location}</h2>
-                    <div id="tags">
-                        {tags.map((tag) => {
-                            return (
-                                <span className="tag" key={`${tag}`}>
-                                    {tag}
-                                </span>
-                            );
-                        })}
-                    </div>
+                    <Tag tags={tags} />
                 </div>
 
                 {/* Host with stars */}
