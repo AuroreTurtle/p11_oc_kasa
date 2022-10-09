@@ -58,7 +58,7 @@ function Accomodation() {
 
                     <div id="host-info">
                         <p id="host-info-name">{host.name}</p>
-                        <img id="host-info-picture" src={host.picture} alt="{host.name}" />
+                        <img id="host-info-picture" src={host.picture} alt={host.name} />
                     </div>
                 </div>
             </div>
