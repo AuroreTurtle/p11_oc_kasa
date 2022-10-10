@@ -30,11 +30,7 @@ root.render(
         <Header />
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route
-                path="/accomodation/:id"
-                render={(props) => <Accomodation {...props} />}
-                element={<Accomodation />}
-            />
+            <Route path="/accomodation/:id" element={<Accomodation />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<Error />} />
         </Routes>
