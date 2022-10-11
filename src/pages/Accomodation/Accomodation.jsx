@@ -3,11 +3,16 @@ import { useParams } from "react-router-dom";
 import Slider from "../../components/Slider/Slider.jsx";
 import Tag from "../../components/Tag/Tag";
 import Collapse from "../../components/Collapse/Collapse";
+import Error from "../Error/Error";
 import "./Accomodation.css";
 
 function Accomodation() {
     const { id } = useParams();
+
     const accomodationDetails = accomodation.find((object) => object.id === id);
+    if (!accomodationDetails) {
+        return <Error />;
+    }
 
     const { title, location, tags, host, rating, description, equipments } = accomodationDetails;
 
